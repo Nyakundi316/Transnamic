@@ -5,6 +5,7 @@ import Services from '@/components/services/Services';
 import Stats from '@/components/stats/Stats';
 import Marquee from "@/components/marquee/marquee";
 import Project from "@/components/projects/project";
+import Partners from "@/components/partners/partners";
 import Contact from '@/components/contact/contact';
 import Slider from '@/components/slider/slider';
 import Testimonial from "@/components/testimonial/testimonial";
@@ -20,6 +21,7 @@ export default function Page() {
       <Marquee />
       <AboutSection />
       <Project />
+      <Partners />
       <Contact />
       <Slider />
       <Testimonial />

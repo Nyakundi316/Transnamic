@@ -57,12 +57,12 @@ export default function FunFact() {
                       <span className="text-4xl font-bold text-foreground tabular-nums">
                         {fact.numbers}
                       </span>
-                      <span className="text-xl font-bold text-amber-600">
+                      <span className="text-xl font-bold text-red-700">
                         {fact.suffix}
                       </span>
                     </div>
-                    <div className="p-2.5 rounded-xl bg-amber-50 dark:bg-amber-950/30">
-                      <Icon className="h-5 w-5 text-amber-600" />
+                    <div className="p-2.5 rounded-xl bg-red-50 dark:bg-red-950/30">
+                      <Icon className="h-5 w-5 text-red-700" />
                     </div>
                   </div>
                   <h3 className="text-lg font-bold text-foreground">{fact.title}</h3>

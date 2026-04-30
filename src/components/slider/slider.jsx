@@ -6,7 +6,7 @@ export default function Slider() {
       <div className="animate-marquee-right flex whitespace-nowrap">
         {items.map((_, i) => (
           <div key={i} className="flex items-center gap-6 px-8 shrink-0">
-            <span className="text-3xl lg:text-4xl font-bold text-background/20 tracking-tight logo-font">
+            <span className="text-3xl lg:text-4xl font-bold text-background/15 tracking-tight logo-font">
               Transnamic
             </span>
             <span className="text-background/10 text-2xl">/</span>

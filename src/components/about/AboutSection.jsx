@@ -9,16 +9,16 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 dark:text-amber-400">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700 dark:text-red-400">
               About Us
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              Driven by passion,<br className="hidden sm:block" />
+              Driven by innovation,<br className="hidden sm:block" />
               grounded in quality.
             </h2>
           </div>
           <p className="text-muted-foreground max-w-md leading-relaxed">
-            Since 2012, we have grown from a local contractor to a leading regional construction and logistics firm across East Africa.
+            Established in October 2020, Transnamic Limited leverages its founders&apos; deep experience in transport, logistics, and construction materials to serve East & Central Africa.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export function HeroImages() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="absolute top-[15%] left-[10%] bg-amber-600 text-white px-5 py-3 rounded-xl shadow-lg z-10"
+        className="absolute top-[15%] left-[10%] bg-red-700 text-white px-5 py-3 rounded-xl shadow-lg z-10"
       >
         <p className="text-2xl font-bold">100%</p>
         <p className="text-xs opacity-90">Success Rate</p>

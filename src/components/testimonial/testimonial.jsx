@@ -16,13 +16,13 @@ const testimonials = [
     name: "Michael Chen",
     role: "Director, Riverside Community Center",
     image: "https://cdn.prod.website-files.com/66cbf3a93b65cddabce581a1/66dd791a2a0e008e0122e81e_Michael%20Chen.jpg",
-    quote: "Their commitment to sustainable building practices and innovative design truly impressed us. The end result is a space that our community loves and uses daily.",
+    quote: "Their commitment to sustainable practices and innovative construction truly impressed us. The equipment fleet is modern and well-maintained, and the team delivered exactly what was promised.",
   },
   {
     name: "David Lee",
     role: "Project Manager, Cityscape Developments",
     image: "https://images.pexels.com/photos/8872475/pexels-photo-8872475.jpeg?auto=compress&cs=tinysrgb&w=600",
-    quote: "Transnamic's team was dedicated, communicative, and reliable. They managed our renovation project seamlessly and delivered high quality work on time. I highly recommend them for any construction needs.",
+    quote: "Transnamic's grading and excavation work on our site was exceptional. Professional crew, modern equipment, and they finished ahead of schedule. A trusted partner for infrastructure projects.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function Testimonial() {
       <div className="container mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 dark:text-amber-400">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700 dark:text-red-400">
               Testimonials
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
@@ -84,11 +84,11 @@ export default function Testimonial() {
             </div>
 
             <div className="lg:col-span-3">
-              <Quote className="h-10 w-10 text-amber-600/20 mb-6" />
+              <Quote className="h-10 w-10 text-red-700/20 mb-6" />
 
               <div className="flex gap-1 mb-6">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 text-amber-500 fill-amber-500" />
+                  <Star key={i} className="h-4 w-4 text-red-600 fill-red-600" />
                 ))}
               </div>
 
@@ -107,7 +107,7 @@ export default function Testimonial() {
                     key={i}
                     onClick={() => setCurrent(i)}
                     className={`h-1.5 rounded-full transition-all duration-300 ${
-                      i === current ? 'w-8 bg-amber-600' : 'w-4 bg-border hover:bg-muted-foreground/30'
+                      i === current ? 'w-8 bg-red-700' : 'w-4 bg-border hover:bg-muted-foreground/30'
                     }`}
                   />
                 ))}

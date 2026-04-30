@@ -27,7 +27,7 @@ export function ProjectImages() {
           />
         </div>
       ))}
-      <div className="w-10 h-10 rounded-full border-2 border-background bg-amber-600 flex items-center justify-center shadow-sm">
+      <div className="w-10 h-10 rounded-full border-2 border-background bg-red-700 flex items-center justify-center shadow-sm">
         <span className="text-[10px] font-bold text-white">+99</span>
       </div>
     </div>

@@ -4,7 +4,6 @@ import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { AnimatedCounter } from './animated-counter';
 import { ProjectImages } from './project-images';
 
 export default function Stats() {
@@ -20,9 +19,9 @@ export default function Stats() {
               className="bg-background rounded-2xl p-8 shadow-sm border border-border/50 flex flex-col justify-between"
             >
               <div>
-                <AnimatedCounter end={1600} suffix="k+" />
+                <span className="block text-5xl lg:text-6xl font-bold text-foreground tabular-nums">4+</span>
                 <p className="text-muted-foreground mt-4 leading-relaxed">
-                  Successfully completed projects across construction, logistics, and infrastructure.
+                  Major infrastructure projects across Nairobi and Mombasa, Kenya.
                 </p>
               </div>
               <div className="mt-8">
@@ -38,16 +37,16 @@ export default function Stats() {
               className="bg-background rounded-2xl p-8 shadow-sm border border-border/50 flex flex-col justify-between"
             >
               <div>
-                <AnimatedCounter end={100} suffix="%" />
+                <span className="block text-5xl lg:text-6xl font-bold text-foreground tabular-nums">7+</span>
                 <p className="text-muted-foreground mt-4 leading-relaxed">
-                  Client satisfaction across every project delivery.
+                  International and local partners including AVIC, Stecol, and CCECC.
                 </p>
               </div>
               <Link
                 href="/projects"
-                className="inline-flex items-center gap-2 mt-8 text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 font-semibold text-sm group"
+                className="inline-flex items-center gap-2 mt-8 text-red-700 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 font-semibold text-sm group"
               >
-                View all projects
+                View our projects
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </motion.div>
@@ -62,7 +61,7 @@ export default function Stats() {
           >
             <Image
               src="/r1.jpg"
-              alt="Transnamic project"
+              alt="Transnamic infrastructure project"
               fill
               className="object-cover"
               priority
@@ -70,10 +69,10 @@ export default function Stats() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 lg:p-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
-                Crafting Quality,<br />Building Trust.
+                Quality Goods &<br />Reliable Service.
               </h2>
               <p className="text-white/70 mt-3 max-w-sm text-sm">
-                Every project reflects our commitment to excellence and lasting value.
+                Serving East & Central Africa with top-tier logistics and construction solutions since 2020.
               </p>
             </div>
           </motion.div>

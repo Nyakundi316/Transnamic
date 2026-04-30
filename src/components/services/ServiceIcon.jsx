@@ -18,7 +18,7 @@ const ServiceIcon = ({ type, className }) => {
       "flex h-11 w-11 items-center justify-center rounded-xl bg-white/90 dark:bg-black/40 backdrop-blur-sm shadow-sm",
       className
     )}>
-      <Icon className="h-5 w-5 text-amber-600" />
+      <Icon className="h-5 w-5 text-red-700" />
     </div>
   );
 };

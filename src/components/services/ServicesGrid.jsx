@@ -6,41 +6,29 @@ import ServicesNavigation from './ServicesNavigation';
 
 const services = [
   {
-    type: 'sustainable',
-    title: 'Sustainable Building',
-    description: 'Implementing eco-friendly practices and materials to create structures that last.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800'
+    type: 'truck',
+    title: 'Road Freight',
+    description: 'Reliable road freight services with timely delivery across local, regional, and national routes throughout East Africa.',
+    image: '/truck0001.jpeg'
   },
   {
     type: 'construction',
-    title: 'Construction Management',
-    description: 'Expert project oversight from planning through completion, ensuring seamless execution.',
+    title: 'Construction',
+    description: 'Full-scale construction services from foundations to finishing, delivering quality infrastructure on time and within budget.',
     image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    type: 'residential',
-    title: 'Residential Construction',
-    description: 'Custom-built homes that combine comfort, style, and modern functionality.',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800'
   },
   {
     type: 'drill',
     title: 'Borehole Drilling',
-    description: 'Sustainable borehole drilling for water extraction, environmental assessments, and geotechnical applications.',
+    description: 'Professional borehole sinking for sustainable water extraction, with environmental assessments and geotechnical expertise.',
     image: 'https://images.unsplash.com/photo-1687669981635-a0becffac6be?q=80&w=1974&auto=format&fit=crop'
   },
   {
     type: 'pickaxe',
-    title: 'Excavation Services',
-    description: 'Precision excavation for accurate and safe foundations, trenches, and site preparation.',
+    title: 'Grading & Excavation',
+    description: 'Precision grading and excavation using modern equipment — excavators, bulldozers, graders, and compactors.',
     image: 'https://media.istockphoto.com/id/1419307054/photo/excavator-at-a-construction-site-against-sunset-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=S1uBZQUqlZgjCeYVukzk3LqGQpqZ_-dBWx1xiPBlwy4='
   },
-  {
-    type: 'truck',
-    title: 'Road Freight',
-    description: 'Reliable road freight services with timely delivery across local, regional, and national routes.',
-    image: '/truck0001.jpeg'
-  }
 ];
 
 const CARDS_PER_PAGE = 3;
@@ -81,7 +69,7 @@ const ServicesGrid = () => {
               key={i}
               onClick={() => setCurrentPage(i)}
               className={`h-1.5 rounded-full transition-all duration-300 ${
-                i === currentPage ? 'w-8 bg-amber-600' : 'w-4 bg-border hover:bg-muted-foreground/30'
+                i === currentPage ? 'w-8 bg-red-700' : 'w-4 bg-border hover:bg-muted-foreground/30'
               }`}
             />
           ))}

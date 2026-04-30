@@ -2,26 +2,32 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Target, History, Heart } from 'lucide-react';
+import { ChevronDown, Eye, Target, Crosshair, Heart } from 'lucide-react';
 
 const tabData = [
+  {
+    key: 'vision',
+    label: 'Our Vision',
+    icon: Eye,
+    content: 'To make Transnamic Logistics a key partner in integrated logistics and infrastructure in East and Central Africa, offering a higher quality of goods & service.',
+  },
   {
     key: 'mission',
     label: 'Our Mission',
     icon: Target,
-    content: 'Our mission is to deliver outstanding, innovative construction solutions that consistently exceed expectations. We combine technical expertise with creative problem-solving to create spaces that inspire and endure.',
+    content: 'To provide top quality transport and logistics services and construction material at cost-effective prices, enabling us to deliver consistent value and dependability to all our customers, large and small.',
   },
   {
-    key: 'history',
-    label: 'Our History',
-    icon: History,
-    content: "Founded in 2012, we've grown from a small local contractor to a leading regional construction firm. Our journey has been marked by landmark projects, continuous innovation, and an unwavering commitment to quality.",
+    key: 'aim',
+    label: 'Our Aim',
+    icon: Crosshair,
+    content: 'To exceed the expectations of our customers through total quality management. Our objective is to provide cost-effective and reliable solutions to help our customers realize their goals.',
   },
   {
     key: 'values',
-    label: 'Our Values',
+    label: 'Core Values',
     icon: Heart,
-    content: 'Integrity, excellence, and innovation form the cornerstone of our operations. We believe in sustainable practices, fostering strong relationships, and creating lasting value for our clients and communities.',
+    content: 'Purpose & Growth, Customer Commitment, Professional Standards, Health & Safety, Accountability, and Good Business Relations — these principles guide every project and partnership we undertake.',
   },
 ];
 
@@ -39,14 +45,14 @@ const AboutTabs = () => {
             key={tab.key}
             className={`rounded-xl border transition-all duration-300 cursor-pointer ${
               isActive
-                ? 'border-amber-600/30 bg-amber-50/50 dark:bg-amber-950/20 shadow-sm'
+                ? 'border-red-700/30 bg-red-50/50 dark:bg-red-950/20 shadow-sm'
                 : 'border-border/50 bg-card hover:border-border'
             }`}
             onClick={() => setActiveTab(isActive ? null : tab.key)}
           >
             <div className="flex items-center justify-between p-5">
               <div className="flex items-center gap-3">
-                <div className={`p-2 rounded-lg ${isActive ? 'bg-amber-600 text-white' : 'bg-muted text-muted-foreground'} transition-colors`}>
+                <div className={`p-2 rounded-lg ${isActive ? 'bg-red-700 text-white' : 'bg-muted text-muted-foreground'} transition-colors`}>
                   <Icon className="h-4 w-4" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">{tab.label}</h3>

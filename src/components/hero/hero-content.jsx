@@ -13,8 +13,8 @@ export function HeroContent() {
         transition={{ duration: 0.6 }}
         className="flex items-center gap-3"
       >
-        <div className="w-2 h-2 rounded-full bg-amber-500" />
-        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 dark:text-amber-400">
+        <div className="w-2 h-2 rounded-full bg-red-600" />
+        <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700 dark:text-red-400">
           Construction & Logistics
         </span>
       </motion.div>
@@ -26,7 +26,7 @@ export function HeroContent() {
         className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground"
       >
         Building the future,{" "}
-        <span className="text-amber-600 dark:text-amber-400">moving</span> what
+        <span className="text-red-700 dark:text-red-400">moving</span> what
         matters.
       </motion.h1>
 
@@ -37,7 +37,7 @@ export function HeroContent() {
         className="text-lg text-muted-foreground leading-relaxed max-w-lg"
       >
         Innovating logistics and construction solutions across East Africa. From
-        groundbreaking to final delivery — we power your vision.
+        groundbreaking to final delivery &mdash; we power your vision.
       </motion.p>
 
       <motion.div
@@ -48,7 +48,7 @@ export function HeroContent() {
       >
         <Link
           href="/contact"
-          className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold bg-amber-600 hover:bg-amber-700 text-white rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-amber-600/25"
+          className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold bg-red-700 hover:bg-red-800 text-white rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-red-700/25"
         >
           Start a project
           <ArrowRight className="h-4 w-4" />

@@ -28,11 +28,11 @@ export default function ProjectInfo({ name, description, location, scope, itemNu
 
           <div className="mt-6 flex flex-col gap-3">
             <div className="flex items-center gap-2 text-sm">
-              <MapPin className="h-3.5 w-3.5 text-amber-600" />
+              <MapPin className="h-3.5 w-3.5 text-red-700" />
               <span className="text-muted-foreground">{location}</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <div className="h-3.5 w-3.5 rounded-full border-2 border-amber-600 flex-shrink-0" />
+              <div className="h-3.5 w-3.5 rounded-full border-2 border-red-700 flex-shrink-0" />
               <span className="text-muted-foreground">{scope}</span>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function ProjectInfo({ name, description, location, scope, itemNu
 
         <Link
           href={projectLink}
-          className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 group/link"
+          className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-red-700 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 group/link"
         >
           View details
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />

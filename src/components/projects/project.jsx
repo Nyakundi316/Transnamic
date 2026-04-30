@@ -5,31 +5,40 @@ import ProjectInfo from "@/components/projects/project-info";
 
 const projectData = [
   {
-    name: "Greenwood Estates",
-    description: "Nestled in a tranquil, tree-lined setting, this estate offers elegant homes crafted with sustainability and comfort in mind.",
-    location: "Downtown City Center",
-    scope: "Office Complex Development",
+    name: "Dagoretti Corner Project",
+    description: "A major infrastructure development in the Dagoretti area of Nairobi, involving road construction, grading, and site preparation using our fleet of heavy equipment.",
+    location: "Nairobi, Kenya",
+    scope: "Road & Infrastructure",
     itemNumber: 1,
-    imageSrc: "/Westlands.jpeg",
-    projectLink: "/projects/greenwood-estates",
+    imageSrc: "/Project3.jpeg",
+    projectLink: "/projects/dagoretti-corner",
   },
   {
-    name: "Seaside Residences",
-    description: "Premium coastal living spaces designed with modern architecture and unobstructed ocean views.",
-    location: "Seaside Avenue",
-    scope: "Residential Development",
+    name: "Eastern Bypass Construction",
+    description: "Large-scale road construction on the Eastern Bypass corridor, delivering grading, excavation, and material supply for one of Nairobi's key transport links.",
+    location: "Nairobi, Kenya",
+    scope: "Road Construction",
     itemNumber: 2,
-    imageSrc: "https://cdn.prod.website-files.com/66cff9a759450299f215b2ec/67025070f5d5d3c3e415c7b4_harbor-view-condominiums.jpg",
-    projectLink: "/projects/oceanview-heights",
+    imageSrc: "/projects/eastern bypass.png",
+    projectLink: "/projects/eastern-bypass",
   },
   {
-    name: "Uhuru Garden",
-    description: "An urban park featuring well-constructed pathways, spacious green fields, and stunning views of the Nairobi city skyline — a peaceful retreat in the heart of the city.",
-    location: "Nairobi City",
-    scope: "Mixed-Use Development",
+    name: "Dongo Kundu Project",
+    description: "Infrastructure development in the Dongo Kundu area of Mombasa, supporting the bypass and free trade zone with earthworks, logistics, and construction materials.",
+    location: "Mombasa, Kenya",
+    scope: "Infrastructure Development",
     itemNumber: 3,
-    imageSrc: "/UhuruGarden.jpeg",
-    projectLink: "/projects/summit-towers",
+    imageSrc: "/projects/Dongo.png",
+    projectLink: "/projects/dongo-kundu",
+  },
+  {
+    name: "Kwa Jomvu A109 Construction",
+    description: "Road construction and improvement works on the A109 highway at Kwa Jomvu, Mombasa — a critical corridor connecting the port city to the rest of Kenya.",
+    location: "Mombasa, Kenya",
+    scope: "Highway Construction",
+    itemNumber: 4,
+    imageSrc: "/projects/Kwa jomvu.png",
+    projectLink: "/projects/kwa-jomvu",
   },
 ];
 
@@ -39,11 +48,11 @@ export default function Project() {
       <div className="container mx-auto px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 dark:text-amber-400">
-              Latest Projects
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-red-700 dark:text-red-400">
+              Our Projects
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              A portfolio of excellence<br className="hidden sm:block" /> and innovation.
+              A portfolio of excellence<br className="hidden sm:block" /> across Kenya.
             </h2>
           </div>
         </div>
